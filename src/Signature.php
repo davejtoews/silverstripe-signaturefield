@@ -1,6 +1,6 @@
 <?php
 
-namespace Micschk\SignatureField;
+namespace DaveJToews\SignatureField;
 
 use SilverStripe\ORM\DB;
 use SilverStripe\ORM\FieldType\DBString;
