@@ -6,7 +6,13 @@ A silverstripe signature form field based on https://github.com/szimek/signature
 
 ![screenshot](images/signaturefield.png)
 
-### Usage
+## Installation
+
+```bash
+composer require davejtoews/silverstripe-signaturefield
+```
+
+## Usage
 
 A signaturefield will be scaffolded if field is set to 'Signature' (field holds base64 png image of signature)
 
