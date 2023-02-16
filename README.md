@@ -1,6 +1,6 @@
 # silverstripe-signaturefield
 
-## NOTE: the field is working fine as is, but I'm thinking of switching the saving to db as vector (svg) instead of png data because of size. Then the signature pad may be switched to [jquery signature pad](http://thomasjbradley.ca/lab/signature-pad/).
+_Forked from [micschk/silverstripe-signaturefield](https://github.com/micschk/silverstripe-signaturefield) which no longer appears to be maintained._
 
 A silverstripe signature form field based on https://github.com/szimek/signature_pad
 
@@ -11,7 +11,7 @@ A silverstripe signature form field based on https://github.com/szimek/signature
 A signaturefield will be scaffolded if field is set to 'Signature' (field holds base64 png image of signature)
 
 ```php
-use Micschk\SignatureField\Signature;
+use DaveJToews\SignatureField\Signature;
 
 class Contract extends DataObject {
 
@@ -25,7 +25,7 @@ class Contract extends DataObject {
 Or explicitly add a SignatureField to a form (eg for non-scafolded formfields or front-end)
 
 ```php
-use Micschk\SignatureField\SignatureField;
+use DaveJToews\SignatureField\SignatureField;
 
 ...
 
@@ -39,6 +39,10 @@ use Micschk\SignatureField\SignatureField;
 		return $fields;
 	}
 ```
+
+## Known Issues
+
+Scaling issues may occur on high DPI screens: https://github.com/szimek/signature_pad/issues/679
 
 ## Development
 

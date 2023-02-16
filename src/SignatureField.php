@@ -1,6 +1,6 @@
 <?php
 
-namespace Micschk\SignatureField;
+namespace DaveJToews\SignatureField;
 
 use SilverStripe\Forms\TextField;
 use SilverStripe\View\Requirements;
@@ -18,8 +18,8 @@ class SignatureField extends TextField
 
     public function __construct($name, $title = null, $value = null)
     {
-        Requirements::javascript('micschk/silverstripe-signaturefield: /javascript/dist/main.js');
-        Requirements::css('micschk/silverstripe-signaturefield: /css/signature.css');
+        Requirements::javascript('davejtoews/silverstripe-signaturefield: /javascript/dist/main.js');
+        Requirements::css('davejtoews/silverstripe-signaturefield: /css/signature.css');
 
         $this->addExtraClass('signature no-sigpad');
 

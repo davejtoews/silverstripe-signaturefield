@@ -1,25 +1,31 @@
 {
-	"name": "micschk/silverstripe-signaturefield",
+	"name": "davejtoews/silverstripe-signaturefield",
 	"description": "A signaturefield based on https://github.com/szimek/signature_pad",
 	"type": "silverstripe-vendormodule",
 	"keywords": ["silverstripe", "forms", "signature"],
-	"homepage": "http://github.com/micschk/silverstripe-signaturefield",
+    "license": "MIT",
+	"homepage": "http://github.com/davejtoews/silverstripe-signaturefield",
 	"authors": [
 	{
-		"name": "Michael van Schaik",
-		"email": "mic@restruct.nl"
+		"name": "David Toews",
+		"email": "davejtoews@gmail.com"
 	}
 	],
-
 	"require":
 	{
 		"silverstripe/framework": "^4.0"
 	},
 	"extra": {
-		"installer-name": "signaturefield",
         "expose": [
             "css",
             "javascript"
         ]
-	}
+    },
+    "autoload": {
+        "psr-4": {
+            "DaveJToews\\GridConfigPresets\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
