@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DaveJToews\\GridConfigPresets\\": "src/"
+            "DaveJToews\\SignatureField\\": "src/"
         }
     },
     "minimum-stability": "dev",
