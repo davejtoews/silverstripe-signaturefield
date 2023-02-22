@@ -18,6 +18,8 @@ class SignatureField extends TextField
 
     public function __construct($name, $title = null, $value = null)
     {
+        Requirements::javascript('davejtoews/silverstripe-signaturefield: /javascript/dist/jquery/jquery-2.2.4.min.js');
+        Requirements::javascript('silverstripe/admin: thirdparty/jquery-entwine/jquery.entwine.js');
         Requirements::javascript('davejtoews/silverstripe-signaturefield: /javascript/dist/main.js');
         Requirements::css('davejtoews/silverstripe-signaturefield: /css/signature.css');
 
