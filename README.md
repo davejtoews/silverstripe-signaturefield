@@ -46,6 +46,15 @@ use DaveJToews\SignatureField\SignatureField;
 	}
 ```
 
+### Front end use
+
+If using this field on a front end form, outside of the CMS, jQuery is required. By default this module will load a packaged version of jQuery. This may conflict with existing versions if you have separately installed jQuery on your front end. To remove the included version of jQuery and make use of your own version, add the following to your yaml config
+
+```yml
+DaveJToews\SignatureField\SignatureField:
+  include_jquery: false
+```
+
 ## Known Issues
 
 Scaling issues may occur on high DPI screens: https://github.com/szimek/signature_pad/issues/679
