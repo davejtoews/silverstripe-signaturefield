@@ -15,12 +15,12 @@ class SignatureField extends TextField
     /**
      * @config
      */
-    public static $include_jquery = true;
+    private static $include_jquery = true;
 
     public function __construct($name, $title = null, $value = null)
     {
         if (Controller::has_curr() && !Controller::curr() instanceof LeftAndMain) {
-            if ($this->config()->inlude_jquery) {
+            if ($this->config()->include_jquery) {
                 Requirements::javascript('davejtoews/silverstripe-signaturefield: /javascript/dist/jquery.js');
             }
             Requirements::javascript('silverstripe/admin: thirdparty/jquery-entwine/jquery.entwine.js');
