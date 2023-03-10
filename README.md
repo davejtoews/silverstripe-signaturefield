@@ -1,7 +1,5 @@
 # silverstripe-signaturefield
 
-_Forked from [micschk/silverstripe-signaturefield](https://github.com/micschk/silverstripe-signaturefield) which no longer appears to be maintained._
-
 A silverstripe signature form field based on https://github.com/szimek/signature_pad
 
 ![screenshot](images/signaturefield.png)
@@ -9,7 +7,7 @@ A silverstripe signature form field based on https://github.com/szimek/signature
 ## Installation
 
 ```bash
-composer require davejtoews/silverstripe-signaturefield
+composer require micschk/silverstripe-signaturefield
 ```
 
 ## Usage
@@ -17,7 +15,7 @@ composer require davejtoews/silverstripe-signaturefield
 A signaturefield will be scaffolded if field is set to 'Signature' (field holds base64 png image of signature)
 
 ```php
-use DaveJToews\SignatureField\Signature;
+use Micschk\SignatureField\Signature;
 
 class Contract extends DataObject {
 
@@ -31,7 +29,7 @@ class Contract extends DataObject {
 Or explicitly add a SignatureField to a form (eg for non-scafolded formfields or front-end)
 
 ```php
-use DaveJToews\SignatureField\SignatureField;
+use Micschk\SignatureField\SignatureField;
 
 ...
 
@@ -51,7 +49,7 @@ use DaveJToews\SignatureField\SignatureField;
 If using this field on a front end form, outside of the CMS, jQuery is required. By default this module will load a packaged version of jQuery. This may conflict with existing versions if you have separately installed jQuery on your front end. To remove the included version of jQuery and make use of your own version, add the following to your yaml config
 
 ```yml
-DaveJToews\SignatureField\SignatureField:
+Micschk\SignatureField\SignatureField:
   include_jquery: false
 ```
 

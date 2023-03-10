@@ -1,6 +1,6 @@
 <?php
 
-namespace DaveJToews\SignatureField;
+namespace Micschk\SignatureField;
 
 use SilverStripe\Admin\LeftAndMain;
 use SilverStripe\Control\Controller;
